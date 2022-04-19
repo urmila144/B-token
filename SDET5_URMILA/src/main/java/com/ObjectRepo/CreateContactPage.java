@@ -33,9 +33,6 @@ public class CreateContactPage {
 		return saveBtn;
 	}
 	
-	public WebElement get
-
-
 	@FindBy(xpath = "//input[@name='account_name']/following-sibling::img[@alt='Select']")
 	private WebElement organizationLookUpImage;
 

@@ -66,7 +66,7 @@ public class BaseClass
 	public void logintoVtiger() throws IOException {
 		LoginPage loginPage = new LoginPage(driver);
 
-		driverUtils.pageloadtimeout();
+		//driverUtils.pageloadtimeout();
 
 
 		driver.get(propFile_Util.readdatafrompropfile("url"));

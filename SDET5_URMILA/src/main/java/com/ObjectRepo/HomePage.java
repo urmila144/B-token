@@ -34,6 +34,10 @@ public class HomePage  //Rule 1
 
 	@FindBy(xpath="//a[text()='Contacts']")
 	private WebElement contactslink;
+	
+	public  WebElement getcontactslink() {
+		return contactslink;
+	}
 
 	//Rule 5: Business Library
 	public void logoutfromApp() 

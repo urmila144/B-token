@@ -20,7 +20,7 @@ public void createcontactwithorgTest() throws InterruptedException, IOException
 {
 	HomePage homePage = new HomePage(driver);
 	
-	HomePage.getContactslink().click();
+	homePage.getcontactslink().click();
 
 	ContactInfoPage contactInfoPage = new ContactInfoPage(driver);
 	contactInfoPage.getCreatecontactsimg().click();
@@ -43,7 +43,7 @@ public void createcontactwithorgTest() throws InterruptedException, IOException
 	contactPage.getSaveBtn().click();
 
 	Thread.sleep(3000);
-	homePage.getContactslink().click();
+	homePage.getcontactslink().click();
 
 	//validation
 	contactInfoPage.checkcontactcreated(contactname, "Last Name");
@@ -60,7 +60,7 @@ public void createcontactwithorgTest() throws InterruptedException, IOException
 public void createcontactTest() throws InterruptedException, IOException
 {
 	HomePage homePage = new HomePage(driver);
-	homePage.getContactslink().click();
+	homePage.getcontactslink().click();
 
 	ContactInfoPage contactInfoPage = new ContactInfoPage(driver);
 	contactInfoPage.getCreatecontactsimg().click();
@@ -74,7 +74,7 @@ public void createcontactTest() throws InterruptedException, IOException
 	contactPage.getSaveBtn().click();
 
 	Thread.sleep(3000);
-	homePage.getContactslink().click();
+	homePage.getcontactslink().click();
 
 	contactInfoPage.checkcontactcreated(contactname, "Last Name");
 

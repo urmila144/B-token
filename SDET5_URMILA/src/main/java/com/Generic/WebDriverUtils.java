@@ -24,10 +24,10 @@ public class WebDriverUtils
 	 * if loaded in given time then control will go to next line 
 	 * 
 	 */
-//	public void pageloadtimeout() 
-//	{
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//	}
+	public void pageloadtimeout() 
+	{
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	}
 	/**
 	 * @author AMAR-G
 	 * This method will maximise the window
@@ -87,15 +87,15 @@ public class WebDriverUtils
 	 * This method is for explicit wait
 	 * @param element
 	 */
-////	public void waitforelement(WebElement element)
-////	{
-////		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-////		wait.until(ExpectedConditions.visibilityOf(element));
-////	}
-////	/**
-//	 * 
-//	 * @param index
-//	 */
+	public void waitforelement(WebElement element)
+	{
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	/**
+	 * 
+	 * @param index
+	 */
 	public void switchtoframe(int index) {
 		driver.switchTo().frame(index);
 	}
@@ -128,9 +128,9 @@ public class WebDriverUtils
 		driver.switchTo().alert().dismiss();
 	}
 
-//	public void waitandclick(WebElement element) {
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-//	wait.until(ExpectedConditions.elementToBeClickable(element)).click();
-//	}
+	public void waitandclick(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+	wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+	}
 }
 
