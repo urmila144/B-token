@@ -3,10 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.VtigerTestCasess.TC003_ContactWithOrg"/>
       <class name="com.VtigerTestCasess.TC001_CreateOrgWithDDTest"/>
       <class name="com.VtigerTestCasess.TC002_CreateOrgTest"/>
-      
+      <class name="com.VtigerTestCasess.TC003_ContactWithOrgTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

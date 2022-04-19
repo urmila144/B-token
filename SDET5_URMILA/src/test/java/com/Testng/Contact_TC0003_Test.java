@@ -32,7 +32,7 @@ public class Contact_TC0003_Test {
 			Properties prop=new Properties();
 			prop.load(fis);
 			
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 			driver.get(prop.getProperty("url"));
 			
 			driver.manage().window().maximize();
@@ -72,11 +72,15 @@ public class Contact_TC0003_Test {
 	        Actions action = new Actions(driver);
 	        action.moveToElement(fiveDD).perform();
 	        driver.findElement(By.xpath("//input[@value='  Save  ']")).click();
+	        Thread.sleep(2000);
+	        driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']")).click();
+	        driver.findElement(By.xpath("//a[text()='Sign Out']")).click();
 	        
 	}
+	
 	     public void Delete() {
 	    	 WebDriver driver = new ChromeDriver();
-	 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+	 		
 
 	    	 driver.findElement(By.xpath("//a[text()='Organizations']")).click();
 	    	 driver.findElement(By.name("search_text")).sendKeys("abc1");

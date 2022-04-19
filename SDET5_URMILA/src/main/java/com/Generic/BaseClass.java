@@ -21,10 +21,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass
 {
-	public WebDriver driver;
-	public static WebDriver sdriver;
 	public Fake_Data data= new Fake_Data();
 	public WebDriverUtils driverUtils;
+	public WebDriver driver;
 	public HomePage homePage;
 	PropFile_Util propFile_Util = new PropFile_Util();
 
@@ -39,21 +38,21 @@ public class BaseClass
 	{
 		System.out.println("Dis-Connect from DB");
 	}
-	//@Parameters("browser")
+
 	@BeforeClass(groups= {"smoke","integration","regression"})
 	public void beforeclass() throws IOException
 	{
-		String browser=propFile_Util.readdatafrompropfile("browser");
-		if(browser.equalsIgnoreCase("firefox")) {
+		String BROWSER=propFile_Util.readdatafrompropfile("browser");
+		if(BROWSER.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 		}
-		else if (browser.equalsIgnoreCase("chrome")) {
+		else if (BROWSER.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver= new FirefoxDriver();
 		}
 
-		sdriver=driver;
+
 		driverUtils = new WebDriverUtils(driver);
 
 	}
@@ -68,6 +67,7 @@ public class BaseClass
 		LoginPage loginPage = new LoginPage(driver);
 
 		driverUtils.pageloadtimeout();
+
 
 		driver.get(propFile_Util.readdatafrompropfile("url"));
 

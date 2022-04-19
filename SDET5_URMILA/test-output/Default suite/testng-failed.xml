@@ -5,11 +5,12 @@
     <classes>
       <class name="com.VtigerTestCasess.TC002_CreateOrgTest">
         <methods>
-          <include name="createorg"/>
           <include name="beforesuite"/>
           <include name="afterClass"/>
           <include name="beforeclass"/>
           <include name="afterSuite"/>
+          <include name="createorgTest"/>
+          <include name="createorgwithmobilenoTest"/>
           <include name="logintoVtiger"/>
           <include name="logout"/>
         </methods>

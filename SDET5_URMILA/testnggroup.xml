@@ -9,8 +9,9 @@
 
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.practiesTESTNG.GroupExcution1_Test"/>
-      <class name="com.practiesTESTNG.GroupExcution_Test"/>
+      <class name="com.VtigerTestCasess.TC001_CreateOrgWithDDTest"/>
+      <class name="com.VtigerTestCasess.TC002_CreateOrgTest"/>
+      <class name="com.VtigerTestCasess.TC003_ContactWithOrgTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

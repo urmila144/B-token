@@ -37,8 +37,6 @@ public class Fake_Data {
 		return faker.company().industry();
 	}
 
-
-
 	public String phonenumber() {
 		Faker faker = new Faker();
 		return faker.phoneNumber().phoneNumber();

@@ -1,6 +1,5 @@
 package com.ObjectRepo;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,11 +34,6 @@ public class HomePage  //Rule 1
 
 	@FindBy(xpath="//a[text()='Contacts']")
 	private WebElement contactslink;
-
-
-	public WebElement getContactslink() {
-		return contactslink;
-	}
 
 	//Rule 5: Business Library
 	public void logoutfromApp() 

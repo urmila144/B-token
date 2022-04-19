@@ -22,7 +22,16 @@ public class OrgINfoPAge
 
 	@FindBy(id ="bas_searchfield")
 	private WebElement orgtypedd;
+	
+	@FindBy(name = "selected_id")
+	private WebElement Firstcheckbox;
+	
+	@FindBy(xpath = "//input[@class='crmbutton small delete']" )
+	private WebElement Deletebtn;
 
+	@FindBy(xpath = "//span[@class='genHeaderSmall']")
+	private WebElement noOrgfound;
+	
 	public WebElement getCreateorgbtn() {
 		return createorgbtn;
 	}
@@ -38,7 +47,19 @@ public class OrgINfoPAge
 	public WebElement getSearchorgbtn() {
 		return searchorgbtn;
 	}
-
+	
+	public WebElement getFirstcheckbox() {
+		return Firstcheckbox;
+	}
+	
+	public WebElement getDeletebtn() {
+		return Deletebtn;
+	}
+	
+	public WebElement getnoOrgfound() {
+		return noOrgfound;
+	}
+	
 	@FindBy(name="submit")
 	private WebElement searchorgbtn;
 

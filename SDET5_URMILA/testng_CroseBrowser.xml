@@ -7,7 +7,7 @@
 <parameter name="browser" value="firefox"></parameter>
     <classes>
     <class name="com.VtigerTestCasess.TC001_CreateOrgWithDDTest"/>
-      <class name="com.VtigerTestCasess.TC002_CreateOrgTest"/>
+      <class name="com.VtigerTestCasess.TC003_ContactWithOrgTest"/>
     </classes>
   </test> <!-- Test -->
 

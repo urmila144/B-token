@@ -31,6 +31,11 @@ public class CreateNewOrgPage {
 
 	@FindBy(xpath="//input[@title='Save [Alt+S]']")
 	private WebElement saveorgbtn;
+	
+	@FindBy(id ="phone")
+	private WebElement Phonenotxtbox;
+	
+	
 
 	public WebElement getorgnametxtbox() {
 		return orgnametxtbox;
@@ -50,5 +55,9 @@ public class CreateNewOrgPage {
 
 	public WebElement getSaveorgbtn() {
 		return saveorgbtn;
+	}
+
+	public WebElement getPhonenotxtbox() {
+		return Phonenotxtbox;
 	}
 }
